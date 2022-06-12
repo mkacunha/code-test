@@ -1,7 +1,7 @@
 package com.mkacunha.simple
 
-import com.mkacunha.shouldBe
 import com.mkacunha.returns
+import com.mkacunha.shouldBe
 import org.junit.jupiter.api.Test
 import org.mockito.kotlin.mock
 
