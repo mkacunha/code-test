@@ -1,9 +1,9 @@
 package com.mkacunha.simple
 
 import com.mkacunha.shouldBe
+import com.mkacunha.returns
 import org.junit.jupiter.api.Test
 import org.mockito.kotlin.mock
-import org.mockito.kotlin.whenever
 
 internal class SimpleTest {
 
@@ -15,8 +15,7 @@ internal class SimpleTest {
     @Test
     internal fun `should mock value`() {
         val simple = mock<Simple>()
-        whenever(simple.value).thenReturn("value")
-
+        simple.value returns "value"
         simple.value shouldBe "value"
     }
 }
